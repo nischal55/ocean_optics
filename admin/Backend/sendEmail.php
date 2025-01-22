@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require '../../vendor/autoload.php';
 
 function sendEmail($to, $toName, $subject, $body) {
     $mail = new PHPMailer(true);
@@ -18,7 +18,7 @@ function sendEmail($to, $toName, $subject, $body) {
         $mail->Port       = 587;
 
         // Recipients
-        $mail->setFrom('skinsavvy55@gmail.com', 'Skin Savvy');
+        $mail->setFrom('oceanoptics55@gmail.com', 'Ocean Optics');
         $mail->addAddress($to, $toName);
 
         // Content
