@@ -179,15 +179,19 @@ $query = mysqli_query($conn, $sql);
                               <p class="fw-bold">NPR. <?php echo ($total + 100) ?></p>
                             </div>
                             <div class="d-flex justify-content-center align-items-center gap-2">
-                              <form action="OrderAddApi.php" method='post'>
-                                <input type="radio" name="payment" value="esewa">
-                                <label for="">
+                              <form action="admin/backend/OrderAddApi.php" method='post'>
+                                <input type="radio" name="payment" value="esewa" id="esewa" style="cursor:pointer;" requried>
+                                <label for="esewa" style="cursor:pointer;">
                                   <img src="img/esewa_og.webp" width="100" alt="">
                                 </label>
-                                <input type="radio" name="payment" value="cod">
-                                <label for="">
+                                <input type="radio" name="payment" value="cod" id="cod" style="cursor:pointer;" required>
+                                <label for="cod" style="cursor:pointer;">
                                   <img src="img/cash.avif" width="100" alt="">
                                 </label>
+                                <br>
+                                <label for="">Delivery Address</label><br>
+                                <input type="text" name="address" id="" class="w-100" required>
+                                <input type="text" name="total" value="<?php echo($total+100) ?> " hidden>
                             </div>
 
                           </div>
