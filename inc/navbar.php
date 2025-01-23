@@ -105,7 +105,7 @@
                      aria-expanded="false">Pages</a>
                    <ul class="dropdown-menu">
                      <li class="nav-item">
-                       <a class="nav-link" href="tracking.html">Tracking</a>
+                       <a class="nav-link" href="tracking.php">Tracking</a>
                      </li>
                      <li class="nav-item">
                        <a class="nav-link" href="elements.html">Elements</a>
