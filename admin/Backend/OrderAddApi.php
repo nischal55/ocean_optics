@@ -34,7 +34,7 @@ if ($payment_method == "esewa") {
         <input type="text" id="product_code" name="product_code" value="EPAYTEST" required hidden>
         <input type="text" id="product_service_charge" name="product_service_charge" value="0" required hidden>
         <input type="text" id="product_delivery_charge" name="product_delivery_charge" value="0" required hidden>
-        <input type="text" id="success_url" name="success_url" value="http://localhost/opticalShop/admin/backend/orderAddEsewa.php" required hidden>
+        <input type="text" id="success_url" name="success_url" value="http://localhost/opticalShop/admin/backend/EsewaConfirmationApi.php" required hidden>
         <input type="text" id="failure_url" name="failure_url" value="http://localhost/opticalShop/" required hidden>
         <input type="text" id="signed_field_names" name="signed_field_names" value="total_amount,transaction_uuid,product_code" required hidden>
         <input type="text" id="signature" name="signature" value="<?php echo ($signature) ?>" required hidden>

@@ -1,4 +1,6 @@
 <?php
+include('../Config/db.php');
+$customer_id = $_COOKIE['customer_id'];
 $query_cart = "SELECT * FROM cart_details where customer_id = '$customer_id'";
 $result = mysqli_query($conn, $query_cart);
 $query_order = "SELECT * FROM order_details ORDER BY order_id DESC LIMIT 1";

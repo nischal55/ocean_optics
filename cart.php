@@ -132,7 +132,7 @@ $query = mysqli_query($conn, $sql);
                 <td></td>
                 <td>
                   <div class="checkout_btn_inner d-flex">
-                    <a class="gray_btn " href="#">Continue Shopping</a>
+                    <a class="gray_btn " href="index.php">Continue Shopping</a>
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       Proceed to Payment
                     </button>
